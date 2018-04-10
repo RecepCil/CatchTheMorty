@@ -64,9 +64,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         alert.show();
+
+
     }
 
     public void gameIsOn(){
+
+        txtScore = (TextView) findViewById(R.id.txtScore);
+        txtScore.setText("Score: 0");
 
         hideImages();
 
