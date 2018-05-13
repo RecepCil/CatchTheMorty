@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.recepcil.catchthekenny.NewScoreActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:layout_marginTop="104dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtName"
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="197dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="29dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edtName"
+        app:layout_constraintEnd_toEndOf="@+id/edtName"
+        app:layout_constraintStart_toStartOf="@+id/edtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtScore"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="İsminizi Giriniz!"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnKaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <Button
+        android:id="@+id/btnKaydet"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+        android:layout_width="122dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="153dp"
+        android:onClick="btnKaydet"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtName"
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+</android.support.constraint.ConstraintLayout>
